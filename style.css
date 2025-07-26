@@ -258,3 +258,63 @@ button svg{
     border-radius: 50%;
     position: absolute;
 }
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+
+}
+.page3-center {
+    /* background-color: red; */
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.page3-center h5 {
+    font-size: 2.5vh;
+    background-color: #fff;
+    color: #111;
+    margin-top: 1vw;
+    font-weight: 650;
+    border-radius: 50px;
+    transform: translateY(16%);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition:all ease 0.5s;
+
+}
+.page3-center:hover h5{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.page3-center .icon{
+    background-color: #fff;
+    padding: 3.3vw;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.page3-center .icon i{
+    color: #111;
+    font-size: 2.8vw;
+}
+.page3 video{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0.2);
+    border-radius: 30px;
+    opacity: 0;
+    z-index: 999999;
+}
