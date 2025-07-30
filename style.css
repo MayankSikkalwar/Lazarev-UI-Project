@@ -64,7 +64,7 @@ nav:hover #nav-bottom{
     font-size: 0.76vw;
     opacity:0;
 }
-button{
+nav button{
     background-color: #499E56;
     display: flex;
     padding: 10px 20px;
@@ -74,7 +74,7 @@ button{
     border: none;
     border-radius: 50vw;
 }
-button svg{
+nav button svg{
     height: 0.8vw;
     margin-left: 1vw;
 }
@@ -197,11 +197,6 @@ button svg{
     right: 0;
     z-index: 2;
 }
-
-
-
-
-
 #page2{
     height: 100vh;
     width: 100%;
@@ -415,4 +410,115 @@ button svg{
     margin-top: 10vh;
     font-size: 1.3vw;
 
+}
+#page6 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 5vh 10.5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#page6 button {
+    background-color: #499E56;
+    border-radius: 50px;
+    padding: 0.9vw 2.4vw ;
+    font-size: 1vw;
+    font-weight: 550;
+    border: none;
+    position: sticky;
+    top: 15%;
+
+}
+#page6-right {
+    width: 70%;
+
+}
+#page6-right>p {
+    font-size: 2.1vw;
+}
+#page6-right > p span {
+    width: 15vw;
+    display: inline-block;
+}
+#page6-content {
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 5vh;
+    padding: 5vh 0;
+    /* border-top: 2px solid #fff; */
+}
+#page6-content>h1 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+#page6-content #flex {
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+#page6-content #flex h4 {
+    border-radius: 50px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 1vw;
+
+}
+.page6-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding-top: 3vh;
+    padding-bottom: 9vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #333;
+    z-index: 8;
+}
+.page6-elem p {
+    width: 55%;
+    font-size: 1vw;
+    position: relative;
+    z-index: 8;
+}
+.page6-elem h3{
+    font-size: 1.5vw;
+    font-weight: 400;
+    position: relative;
+    z-index: 8;
+}
+.page6-elem i {
+    font-size: 1vw;
+    position: relative;
+    z-index: 8;
+}
+.over{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.page6-elem:hover h3 {
+    padding-left: 1vw;
+
+}
+.page6-elem:hover i {
+    padding-right: 1vw;
+}
+.page6-elem:hover .over {
+    transform: translateY(0);
+    opacity: 1;
+}
+.page6-elem:hover{
+    border-top: 2px solid #fff;
 }
